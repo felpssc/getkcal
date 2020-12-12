@@ -111,6 +111,7 @@ header {
 
 .result-content ul li details summary {
     cursor: pointer;
+    outline: none;
 }
 
 @media (max-width: 768px) {
