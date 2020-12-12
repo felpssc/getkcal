@@ -8,12 +8,12 @@
         const age = Number(document.getElementById('age').value);
         const weight = Number(document.getElementById('weight').value);
         var height = document.getElementById('height').value;
-        height = height[0] + '.' + height[1] + height[2];
+        heightIMC = Number(height[0] + '.' + height[1] + height[2]);
         Number(height);
         const gender = getSelectedValue('gender');
         const activityLevel = getSelectedValue('activity_level');
 
-        const imc = weight / (height ** 2);
+        const imc = weight / (heightIMC ** 2);
         
         const tmb = (
             gender === 'female'
