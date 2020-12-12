@@ -35,7 +35,7 @@
 
                 <li>
                     <details>
-                        <summary>Sobre IMC (clique aqui)</summary>
+                        <summary>Detalhes IMC</summary>
                         <p>Entre <b>17 e 18.4</b>: <strong style="color:#fddb33">Abaixo do peso</strong></p>
                         <p>Entre 18.5 e 24.9: <strong style="color:#97f361">Normal</strong></p>
                         <p>Entre 25 e 29.9: <strong style="color:#fea753">Acima do peso</strong></p>
