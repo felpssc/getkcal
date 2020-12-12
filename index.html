@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>getkcal</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="/src/images/icon.svg" type="image/x-icon"/>
 </head>
 <body>
     <div class="container">
@@ -16,7 +17,7 @@
             <form id="form">
 
                 <div class="form-group">
-                    <label for="gender">Seu sexo</label>
+                    <label for="gender">Seu sexo:</label>
                     <select id="gender">
                         <option value="male">Masculino</option>
                         <option value="female">Feminino</option>
@@ -24,22 +25,22 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="age">Sua idade</label>
-                    <input type="number" id="age">
+                    <label for="age">Sua idade:</label>
+                    <input type="number" id="age" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="weight">Seu peso</label>
-                    <input type="number" id="weight">
+                    <label for="weight">Seu peso <code>(em kg):</code></label>
+                    <input type="number" step="0.01" id="weight" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="height">Sua altura</label>
-                    <input type="number" id="height">
+                    <label for="height">Sua altura <code>(em cm):</code></label>
+                    <input type="number" placeholder="ex: 175 cm"step="1" id="height" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="activity_level">Seu nível de atividade</label>
+                    <label for="activity_level">Seu nível de atividade:</label>
                     <select id="activity_level">
                         <option value="1.2">Sedentário</option>
                         <option value="1.375">Pouca Atividade</option>
@@ -54,24 +55,9 @@
                 </div>
             </form>
 
-            <div class="result-container">
-                <h2>Aqui está o resultado:</h2>
-
-                <div class="result-content">
-                    <ul>
-                        <li>Seu metabolismo basal é de <strong>1606 calorias</strong>.</li>
-
-                        <li>Para manter o seu peso você precisa consumir em média <strong>1928 calorias</strong>.</li>
-
-                        <li>Para perder peso você precisa consumir em média <strong>1638 calorias</strong>.</li>
-
-                        <li>Para ganhar peso você precisa consumir em média <strong>2217 calorias</strong>.</li>
-                    </ul>
-                </div>
-            </div>
-
+            <div class="result-container" id="result"></div>
         </div>
     </div>
-    
+    <script src="src/js/script.js"></script>
 </body>
 </html>

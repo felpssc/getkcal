@@ -109,6 +109,10 @@ header {
     color: #FF7373;
 }
 
+.result-content ul li details summary {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 80vw;
