@@ -55,6 +55,8 @@
         </div>`;
         const resultContainer = document.getElementById('result');
         resultContainer.innerHTML = layout;
+
+        document.documentElement.scrollTop = 350;
     }
 
   
